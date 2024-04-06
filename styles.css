@@ -1,0 +1,292 @@
+/* Colors */
+:root {
+    --bg-light: #FEF5EF;
+    --bg-color2: #7FA7B8;
+    --bg-color: #D6E3F8;
+    --accent-color1: #9D5C63;
+    --accent-color2: #372F34; 
+    --accent-color3: #E4BB97;
+  }
+h1, h2 {
+    color: var(--accent-color2);
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    color: var(--accent-color2);
+    font-size: 2rem !important;
+}
+.navbar {
+    background-color: whitesmoke !important;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2888, 75, 83, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.navbar-light .navbar-toggler {
+    border: 1px solid var(--accent-color2) !important;
+}
+.navbar a {
+    color: var(--accent-color2) !important;
+}
+.navbar a:hover {
+    color: var(--accent-color1) !important;
+}
+.btn-custom {
+    background-color: var(--bg-color) !important;
+    color: var(--accent-color2) !important; /* Custom text color */
+    /* border: 1px solid var(--bg-color) !important; */
+}
+.btn-custom:hover {
+    background-color: var(--accent-color3) !important; /* Darker shade for hover state */
+  }
+.btn2-custom {
+    background-color: var(--accent-color1) !important;
+    color: white !important; /* Custom text color */
+    /* border: 1px solid #584B53 !important; */
+}
+.btn2-custom:hover {
+    background-color: var(--accent-color3) !important;
+    color: var(--accent-color2) !important;
+  }
+.hidden {
+    visibility: hidden;
+}
+.jumbotron {
+    margin: 0 !important;
+    background: var(--bg-color) !important;
+}
+.alt-1 {
+    background: var(--bg-color);
+}
+.alt-2 {
+    background: var(--bg-light);
+}
+.alt-3 {
+    background: var(--accent-color3)
+}
+/* HOMEPAGE */
+img {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+/* Card Styling */
+.max-width-custom {
+    max-width: 1200px; /* Adjust based on your design needs */
+    margin-right: auto;
+    margin-left: auto;
+}
+i {
+    color: var(--accent-color1);
+}
+.card-text {
+    text-align: left;
+}
+.card {
+    background-color: var(--bg-light) !important;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Initial subtle shadow */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slightly raise the card */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Increased shadow intensity */
+}
+
+
+/* Carousel Styling */
+#studioCarousel {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.width-auto {
+    width: auto;
+}
+.carousel-item {
+    height: 80%; 
+}
+.carousel-item img {
+    object-fit: cover; 
+    height: 35%;
+    width: 35%;
+}
+.carousel-indicators li {
+    background-color: #000;
+    width: 10px !important; 
+    height: 10px !important; 
+    border-radius: 50%; 
+}
+.carousel-indicators li.active {
+    background-color: var(--accent-color1); 
+}
+/* Join Us */
+.social-links i {
+    padding: 12px;
+}
+.social-links i:hover {
+    color: var(--accent-color3);
+}
+
+/* Footer Styling */
+footer p {
+    margin: 0;
+}
+/* Instructors Page */
+
+/* Bio Cards */
+.item {
+    justify-content:center;
+    /* margin-top: 1rem !important;
+    margin-bottom: 1rem !important; */
+}
+  
+.item .box { /* Card sizing - basic */
+    text-align:center;
+    padding: 6% 6% 2% 6%; 
+    background-color: var(--bg-light);
+    /* border: 1px solid #372F34; */
+    border-radius: 15px;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.item .name {
+    font-weight: 500;
+    margin-top:14px;
+    margin-bottom:4px;
+    color:var(--accent-color2);
+}
+.item .title {
+    text-transform:uppercase;
+    font-weight:bold;
+    color: var(--accent-color1);
+    letter-spacing:2px;
+    font-size:.8em;
+}
+.item .specialties {
+    text-transform:uppercase;
+    font-weight:bold;
+    color: var(--accent-color1);
+    letter-spacing:2px;
+    font-size:.8em;
+    font-style: italic;
+}  
+.item .description {
+    color: var(--accent-color2);
+    font-size:1em;
+    margin-top:6px;
+    margin-bottom:10px;
+    text-align: justify;
+}
+
+.item img {
+    max-width:120px;
+}
+.social i {
+    font-size:18px;
+    color: var(--accent-color1);
+}
+.social a {
+    color:inherit;
+    margin:0 10px;
+    display:inline-block;
+    opacity:0.7;
+}
+.social a:hover {
+    opacity:1;
+}
+
+/* FAQ Section */
+.faq-question {
+    background-color: var(--bg-light) !important;
+    color: var(--accent-color2);
+}
+.faq-answer {
+    background-color: var(--bg-light) !important;
+    color: var(--accent-color2);
+}
+.fa-angle-down {
+    color: var(--accent-color2);
+}
+.faq-question .card-header[data-toggle="collapse"][aria-expanded="true"] {
+    background-color: var(--accent-color1) !important;
+    color: white;
+}
+
+/* Classes Page */
+.list-group-item {
+    background-color: var(--bg-light) !important;
+    color: var(--accent-color2) !important;
+}
+.list-group-item-action.active {
+    border-color: var(--accent-color2) !important;
+    background-color: var(--accent-color1) !important;
+    color: white !important;
+}
+.list-group-item-action.active span {
+    color: var(--accent-color3) !important;
+}
+.list-group span {
+    color: var(--accent-color1);
+    font-size: 1.5rem;
+    padding-right: 15px;
+}
+.tab-content .fas {
+    font-size: 2rem;
+    color: var(--accent-color3)
+}
+.tab-pane span {
+    background-color: var(--accent-color3);
+    /* border: 2px solid var(--bg-color); */
+    color: var(--accent-color2);
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.price-header {
+    background-color: var(--accent-color1) !important;
+    color: var(--bg-light) !important;
+}
+.card-body, .card-body h1 {
+    color: var(--accent-color2) !important;
+}
+.card-body small {
+    color: blue;
+}
+.info-card {
+    border: none;
+}
+.info-card h3 {
+    padding-top: 25px;
+} 
+
+/* Media queries */
+@media screen and (min-width: 768px) /* MEdium Screen */
+{
+
+      
+    .carousel-item img {
+        object-fit: cover; 
+        height: 75%;
+        width: 75%;
+    }
+    
+}
+
+@media screen and (min-width: 992px) /* Large Screen */
+{
+   
+    #studioCarousel .carousel-inner img {
+        max-width: 75%; /* Adjust the max-width to desired percentage */
+        margin: auto; /* Centers the image */
+      }
+    #studioCarousel .carousel-control-prev,
+    #studioCarousel .carousel-control-next {
+    width: 5%; /* Adjust control width if necessary */
+  }
+  #studioCarousel .carousel-control-prev {
+    left: calc((100% - 75%) / 2); /* Adjust according to the max-width of carousel-inner */
+  }
+  #studioCarousel .carousel-control-next {
+    right: calc((100% - 75%) / 2); /* Adjust according to the max-width of carousel-inner */
+  }
+}
