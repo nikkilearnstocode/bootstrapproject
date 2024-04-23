@@ -95,7 +95,7 @@ p {
     background: var(--accent-color3)
 }
 .alt-4 {
-    background-color: var(--bg-offlight);
+    background-color: var(--bg-offlight) !important;
 }
 /* HOMEPAGE */
 img {
