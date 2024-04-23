@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SoulFlow Yoga Studio - Capstone Project</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Classes - SoulFlow Yoga Studio - Capstone Project</title>
+
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <script src="https://kit.fontawesome.com/80ba0d9705.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <img src="./images/logodark.png" alt="Logo" width="36" height="36" class="d-inline-block align-text-top rounded-circle">
+        <img src="./images/sflogo.png" alt="Logo" width="36" height="36" class="d-inline-block align-text-top rounded-circle">
         <a class="navbar-brand pl-5 pl-lg-2" href="index.html">
             SoulFlow Yoga Studio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,31 +44,19 @@
             </ul>
         </div>
     </nav>
+
     <!-- Hero/intro Section -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
             <h1 class="display-4">Classes & Membership</h1>
         </div>
     </div>
-    <!-- <div class="container py-3 py-lg-5">
-        <div class="row d-flex justify-content-center justify-content-lg-end">
-            <div class="col-10 col-lg-6 text-center pb-2">
-                <img src="/images/welcome.jpg" class="img-fluid rounded" alt="placeholder">
-            </div>
-            <div class="col-10 col-lg-6 my-auto text-lg-left">
-                <h2 class="text-center">Your Path to Wellness Begins Here</h2>
-                <p class="lead">At SoulFlow Yoga Studio, we offer a diverse range of classes designed to suit every level and style of yoga practice. Whether you're seeking to build strength, find calm, or explore meditation, our doors are open to guide you on your journey.</p>
-                <p>Find the perfect class, book your spot, and explore our membership options to begin your transformative journey today.</p>
-                <a href="#" class="btn btn2-custom">Book Your Class</a>
-            </div>
-        </div>
-    </div> -->
-
+    
     <!-- Class Schedule -->
-    <div class="container py-3 pb-4">
+    <div class="container my-auto py-4">
         <div class="row d-flex justify-content-center justify-content-lg-end">
-            <div class="col-10 col-lg-6 my-auto text-center text-lg-left">
-                <h2>Soul Flow Class Schedule</h2>
+            <div class="col-10 col-lg-6 my-auto">
+                <h2 class="text-center big-heading">Soul Flow Class Schedule</h2>
                 <p>At SoulFlow Yoga Studio, we offer a diverse range of classes designed to suit every level and style of yoga practice. Whether you're seeking to build strength, find calm, or explore meditation, our doors are open to guide you on your journey.</p>
                 <p>Discover our carefully curated classes, each designed to harmonize your mind, body, and spirit. Click on a class to learn more or to book your session.</p>
             </div>
@@ -142,61 +137,72 @@
     </div>
     
     <!-- Membership Pricing -->
-    <div class="container-fluid py-3 alt-1" id="membership">
+    <div class="container-fluid my-auto py-4 alt-1" id="membership">
         <div class="container">
-            <h2 class="text-center pt-3">Membership Options</h2>
-            <h3 class="text-center pb-3 lead">Choose your path to wellness</h3>
+            <h2 class="text-center pt-3 big-heading">Membership Options</h2>
+            <h4 class="text-center card-title pb-4">Choose your path to wellness</h4>
+            <!-- Cards -->
             <div class="container">
-                <div class="card-deck mb-3 text-center">
-                  <div class="card mb-4 box-shadow">
-                    <div class="card-header price-header">
-                      <h4 class="my-0 font-weight-normal">Drop-In Bliss</h4>
+                <div class="row membership-row d-flex justify-content-center text-center">
+                    <!--Card 1-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header price-header">
+                                <h4 class="my-0 font-weight-normal">Drop-In Bliss</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$20 <small class="text-muted">/ class</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li>Single class purchase</li>
+                                        <li>Ideal for the occasional visit</li>
+                                        <li>Access to any class, space permitting</li>
+                                    </ul>
+                                <button type="button" class="btn btn2-custom btn-lg btn-block">Buy a Class</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$20 <small class="text-muted">/ class</small></h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <li>Single class purchase</li>
-                        <li>Ideal for the occasional visit</li>
-                        <li>Access to any class, space permitting</li>
-                      </ul>
-                      <button type="button" class="btn btn2-custom btn-lg btn-block">Buy a Class</button>
+                    <!--Card 2-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header price-header">
+                                <h4 class="my-0 font-weight-normal">Flow Membership</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$100 <small class="text-muted">/ mo</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li>Unlimited classes</li>
+                                        <li>Priority booking</li>
+                                        <li>10% off workshops and special events</li>
+                                    </ul>
+                                <button type="button" class="btn btn-lg btn-block btn-custom">Get Started</button>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="card mb-4 box-shadow">
-                    <div class="card-header price-header">
-                      <h4 class="my-0 font-weight-normal">Flow Membership</h4>
+                    <!--Card 3-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header price-header">
+                                <h4 class="my-0 font-weight-normal">Eternal Soul</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$1000 <small class="text-muted">/ year</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li>All benefits of the Flow Membership</li>
+                                        <li>One private session per month</li>
+                                        <li>Exclusive retreat discounts</li>
+                                    </ul>
+                                <button type="button" class="btn btn-lg btn-block btn2-custom">Join Now</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$100 <small class="text-muted">/ mo</small></h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <li>Unlimited classes</li>
-                        <li>Priority booking</li>
-                        <li>10% off workshops and special events</li>
-                      </ul>
-                      <button type="button" class="btn btn-lg btn-block btn-custom">Get Started</button>
-                    </div>
-                  </div>
-                  <div class="card mb-4 box-shadow">
-                    <div class="card-header price-header">
-                      <h4 class="my-0 font-weight-normal">Eternal Soul</h4>
-                    </div>
-                    <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$1000 <small class="text-muted">/ year</small></h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <li>All benefits of the Flow Membership</li>
-                        <li>One private session per month</li>
-                        <li>Exclusive retreat discounts</li>
-                      </ul>
-                      <button type="button" class="btn btn-lg btn-block btn2-custom">Join Now</button>
-                    </div>
-                  </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!--Why SoulFlow-->
-    <div class="container-fluid py-3" id="why-soulflow">
-        <h2 class="text-center">Why Choose SoulFlow?</h2>
+    <div class="container-fluid my-auto py-4" id="why-soulflow">
+        <h2 class="text-center big-heading pb-0">Why Choose SoulFlow?</h2>
 
         <div class="d-flex justify-content-center py-lg-5">
             <div class="row justify-content-center col-10">
@@ -225,17 +231,20 @@
     </div>
     
     <!--CTA-->
-    <div class="container-fluid text-center py-3 alt-2">
-        <h2 class="py-3">Ready to Transform Your Life?</h2>
-
-        <a href="classes.html" class="btn btn2-custom btn-lg" role="button">Join Soul Flow Now</a>
-
-        <p class="col-lg-8 offset-lg-2 py-3">Experience the difference a dedicated yoga practice can make.<br>
-        Join us at SoulFlow Yoga Studio and discover your path to inner peace, strength, and flexibility.</p>
+    <div class="container-fluid alt-2">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <h2 class="py-3 big-heading text-center">Ready to Transform Your Life?</h2>
+                <p class="mx-auto col-lg-6">Experience the difference a dedicated yoga practice can make.<br><br>Join us at SoulFlow Yoga Studio and discover your path to inner peace, strength, and flexibility.</p>
+                <div class="text-center py-3 mb-2">
+                    <a href="classes.html" class="btn btn2-custom btn-lg" role="button">Join Soul Flow Now</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
-    <footer class="alt-1 text-center text-lg-start container-fluid py-3">
+    <footer class="alt-4 text-center text-lg-start container-fluid py-3">
         <p>&#169; SoulFlow Yoga Studio - Your Sanctuary for Mind, Body, and Soul</p>
     </footer>
     

@@ -1,27 +1,46 @@
 /* Colors */
 :root {
     --bg-light: #FEF5EF;
+    --bg-offlight: #EEF3FC;
     --bg-color2: #7FA7B8;
     --bg-color: #D6E3F8;
     --accent-color1: #9D5C63;
     --accent-color2: #372F34; 
     --accent-color3: #E4BB97;
-  }
-h1, h2 {
+}
+/* Typography */
+h1, h2, h3, h4, p {
     color: var(--accent-color2);
+}
+h1, h2, h3, h4 {
+    font-family: "Philosopher", sans-serif;
+}
+h1 {
+    font-weight: 700 !important;
 }
 h2 {
     font-size: 2.5rem;
+    font-weight: 700 !important;
 }
 h3 {
-    color: var(--accent-color2);
     font-size: 2rem !important;
 }
+h4 {
+    color: white;
+}
+p {
+    font-family: "Mulish", sans-serif;
+}
+.lead {
+    font-weight: 200 !important;
+}
+/* NAV */
 .navbar {
-    background-color: whitesmoke !important;
+    background-color: var(--bg-offlight);
+    font-family: "Philosopher", sans-serif;
 }
 .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2888, 75, 83, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2888, 75, 83, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 .navbar-light .navbar-toggler {
     border: 1px solid var(--accent-color2) !important;
@@ -34,7 +53,8 @@ h3 {
 }
 .btn-custom {
     background-color: var(--bg-color) !important;
-    color: var(--accent-color2) !important; /* Custom text color */
+    color: var(--accent-color2) !important;
+    font-family: "Mulish", sans-serif !important;
     /* border: 1px solid var(--bg-color) !important; */
 }
 .btn-custom:hover {
@@ -42,7 +62,8 @@ h3 {
   }
 .btn2-custom {
     background-color: var(--accent-color1) !important;
-    color: white !important; /* Custom text color */
+    color: white !important;
+    font-family: "Mulish", sans-serif !important;
     /* border: 1px solid #584B53 !important; */
 }
 .btn2-custom:hover {
@@ -56,6 +77,14 @@ h3 {
     margin: 0 !important;
     background: var(--bg-color) !important;
 }
+.jumbotron h2 {
+    font-weight: 400 !important;
+    font-style: italic;
+}
+.big-heading {
+    font-size: 2.75rem !important;
+    padding: 2% 0px;
+}
 .alt-1 {
     background: var(--bg-color);
 }
@@ -64,6 +93,9 @@ h3 {
 }
 .alt-3 {
     background: var(--accent-color3)
+}
+.alt-4 {
+    background-color: var(--bg-offlight);
 }
 /* HOMEPAGE */
 img {
@@ -77,6 +109,9 @@ img {
 }
 i {
     color: var(--accent-color1);
+}
+.card-title {
+    color: var(--accent-color2);
 }
 .card-text {
     text-align: left;
@@ -101,8 +136,15 @@ i {
 .width-auto {
     width: auto;
 }
+.hide-color {
+    background-color: white !important;
+}
+.carousel-inner {
+    background-color: var(--bg-light);
+}
 .carousel-item {
-    height: 80%; 
+    height: 80%;
+    background-color: var(--bg-light); 
 }
 .carousel-item img {
     object-fit: cover; 
@@ -149,7 +191,8 @@ footer p {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 .item .name {
-    font-weight: 500;
+    font-size: 1.65rem !important;
+    font-weight: 600;
     margin-top:14px;
     margin-bottom:4px;
     color:var(--accent-color2);
@@ -198,10 +241,11 @@ footer p {
 .faq-question {
     background-color: var(--bg-light) !important;
     color: var(--accent-color2);
+    font-family: "Mulish", sans-serif !important;
 }
 .faq-answer {
     background-color: var(--bg-light) !important;
-    color: var(--accent-color2);
+    color: var(--accent-color2);  
 }
 .fa-angle-down {
     color: var(--accent-color2);
@@ -212,9 +256,11 @@ footer p {
 }
 
 /* Classes Page */
+
 .list-group-item {
     background-color: var(--bg-light) !important;
     color: var(--accent-color2) !important;
+    font-family: "Philosopher", sans-serif !important;
 }
 .list-group-item-action.active {
     border-color: var(--accent-color2) !important;
@@ -228,6 +274,9 @@ footer p {
     color: var(--accent-color1);
     font-size: 1.5rem;
     padding-right: 15px;
+}
+.tab-content  {
+    font-family: "Mulish", sans-serif !important;
 }
 .tab-content .fas {
     font-size: 2rem;
@@ -262,13 +311,19 @@ footer p {
 /* Media queries */
 @media screen and (min-width: 768px) /* MEdium Screen */
 {
-
+    .membership-row {
+        display: flex;
+        flex: wrap;
+        justify-content: center;
+    }
       
     .carousel-item img {
         object-fit: cover; 
         height: 75%;
         width: 75%;
     }
+
+    
     
 }
 
@@ -276,8 +331,8 @@ footer p {
 {
    
     #studioCarousel .carousel-inner img {
-        max-width: 75%; /* Adjust the max-width to desired percentage */
-        margin: auto; /* Centers the image */
+        max-width: 100%; 
+        margin: auto;
       }
     #studioCarousel .carousel-control-prev,
     #studioCarousel .carousel-control-next {
