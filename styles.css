@@ -311,12 +311,14 @@ footer p {
 /* Media queries */
 @media screen and (min-width: 768px) /* MEdium Screen */
 {
+    
+      
     .membership-row {
         display: flex;
         flex: wrap;
         justify-content: center;
     }
-      
+    
     .carousel-item img {
         object-fit: cover; 
         height: 75%;
@@ -339,9 +341,9 @@ footer p {
     width: 5%; /* Adjust control width if necessary */
   }
   #studioCarousel .carousel-control-prev {
-    left: calc((100% - 75%) / 2); /* Adjust according to the max-width of carousel-inner */
+    left: calc((100% - 95%) / 2); /* Adjust according to the max-width of carousel-inner */
   }
   #studioCarousel .carousel-control-next {
-    right: calc((100% - 75%) / 2); /* Adjust according to the max-width of carousel-inner */
+    right: calc((100% - 95%) / 2); /* Adjust according to the max-width of carousel-inner */
   }
 }
