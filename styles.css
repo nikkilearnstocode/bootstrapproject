@@ -308,10 +308,25 @@ footer p {
     padding-top: 25px;
 } 
 
+blockquote {
+    font-size: 16px !important;
+    font-weight: 100;
+}
+.blockquote-footer {
+    font-size: 14px !important;
+    font-weight: 500;
+}
 /* Media queries */
 @media screen and (min-width: 768px) /* MEdium Screen */
 {
-    
+    blockquote {
+        font-size: 20px !important;
+        font-weight: 100;
+    }
+    .blockquote-footer {
+        font-size: 16px !important;
+        font-weight: 500;
+    }
       
     .membership-row {
         display: flex;
